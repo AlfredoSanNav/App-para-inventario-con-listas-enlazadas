@@ -1,3 +1,5 @@
+import Producto from './producto.js'
+
 export default class Inventario{
     constructor(){
         this.productos = {}
@@ -8,5 +10,7 @@ export default class Inventario{
     agregarFinal(producto){
         this.productos[this.final] = producto
         this.final++
+
+        console.log(this.productos)
     }
 }
