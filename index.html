@@ -5,11 +5,36 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" placeholder="Código del producto" id="codigoAgregar" > <br><br>
+    <label>Agregar producto</label> <br><br>
+    <input type="number" placeholder="Código del producto" id="codigoAgregar" > <br><br>
     <input type="text" placeholder="Descripción del producto" id="descripcionAgregar" > <br><br>
-    <input type="text" placeholder="Cantidad" id="cantidadAgregar" > <br><br>
-    <input type="text" placeholder="Costo del producto" id="costoAgregar" > <br><br>
-    <input type="button" value ="Agregar" id="btnAgregar" > <br><br>
+    <input type="number" placeholder="Cantidad" id="cantidadAgregar" > <br><br>
+    <input type="number" placeholder="Costo del producto" id="costoAgregar" > <br><br>
+    <input type="number" placeholder="Posición" id="posicionAgregar" > <br><br>
+    <input type="button" value ="Agregar al inicio" id="btnAgregarInicio" >
+    <input type="button" value ="Agregar al final" id="btnAgregarFinal" >
+    <input type="button" value ="Agregar en posición" id="btnAgregarPosicion" >
+    <br><br><br><br>
+
+    <input type="button" value ="Eliminar el primero" id="btnEliminarPrimero" > <br><br><br><br>
+
+    <label>Agregar eliminar producto por código</label> <br><br>
+    <input type="number" placeholder="Código del producto a eliminar" id="codigoEliminar" > <br><br>
+    <input type="button" value ="Eliminar" id="btnEliminar" > <br><br><br><br>
+
+    <label>Buscar producto por código</label> <br><br>
+    <input type="number" placeholder="Código del producto a buscar" id="codigoBuscar" > <br><br>
+    <input type="button" value ="Buscar" id="btnBuscar" > <br><br>
+    <ul id="listaBuscar"></ul> <br><br><br><br>
+
+    <input type="button" value ="Listar elementos" id="btnListar" > <br><br>
+    <ul id="listaListar"></ul>  <br><br><br><br>
+
+    <input type="button" value ="Listar inverso" id="btnListarInverso" > <br><br><br><br>
+    <ul id="listaListarInverso"></ul>
+    
+    
+    
     
 </body>
 <script src="main.js" type="module"></script>
