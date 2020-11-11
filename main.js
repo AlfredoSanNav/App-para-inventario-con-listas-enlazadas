@@ -1,4 +1,4 @@
-import Inventario from './inventario.js'
+/*import Inventario from './inventario.js'
 import Producto from './producto.js'
 
 var codigoAgregar = document.querySelector('#codigoAgregar')
@@ -18,6 +18,6 @@ btnAgregarFinal.addEventListener('click', () => {
 
     var producto = new Producto(codigo, descripcion, cantidad, costo)
     inventario01.agregarFinal(producto)
-    console.log(descripcionAgregar.value)
-    alert("Se agregó el producto " + producto.descripcion + " con exito!!")
-})
+
+    alert("Se agregó el producto " + producto.descripcion + "con exito!!")
+}) */
