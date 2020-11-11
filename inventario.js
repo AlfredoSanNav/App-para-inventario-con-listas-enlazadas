@@ -9,7 +9,7 @@ export default class Inventario{
         if(this.inicio == null){
             this.inicio = nuevo
         } else {
-            let aux = inicio
+            let aux = this.inicio
             while(aux.siguiente != null){
                 aux = aux.siguiente
             }
@@ -39,7 +39,7 @@ export default class Inventario{
 
     buscarAnterior(codigo){
         let aux = this.inicio
-        while(aux.siguiente.codigo == codigo || aux.siguiente != null){
+        while(aux.siguiente.codigo != codigo ){
             aux = aux.siguiente
         }
         if(aux.siguiente == null){
@@ -49,7 +49,20 @@ export default class Inventario{
             aux.siguiente =aux.siguiente.siguiente
             temp.siguiente = null
             return temp 
+        }        
+    }
+
+    listar(){
+        let aux = this.inicio
+        console.log(aux)
+        while(aux.siguiente != null){
+            console.log(aux.siguiente)
+            aux = aux.siguiente
         }
-        
+    }
+
+    listarInverso(){
+            
+        }
     }
 }
