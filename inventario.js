@@ -63,6 +63,6 @@ export default class Inventario{
 
     listarInverso(){
             
-        }
+        
     }
 }
